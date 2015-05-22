@@ -40,15 +40,15 @@ def solve(num, formula):
     for i in formula:
         for j in i:
             if j == "*":
-                mult(num, i)
+                num = mult(num, i)
 
             elif j == "/":
-                divide(num, i)
+                num = divide(num, i)
             elif j == "+":
-                add(num, i)
+                num = add(num, i)
 
             elif j == "-":
-                subs(num, i)
+                num = subs(num, i)
 
 
 
